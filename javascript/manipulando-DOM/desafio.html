@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript - Desafio</title>
+</head>
+<body>
+    
+    <button type="submit">Criar Botão</button>
+
+    <div id="app">
+    </div>
+
+<script>
+    var btnElement = document.querySelector('button');
+
+    btnElement.addEventListener('click', function(){
+        var box = document.createElement('div');
+        box.style.width = '100px';
+        box.style.height = '100px';
+        box.style.margin = '20px';
+        box.style.backgroundColor = "#000";
+
+        box.setAttribute('class', 'item');
+
+        var app = document.querySelector('#app');
+        app.appendChild(box);
+    });
+
+    function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+
+        return color;
+    }
+
+    var boxRandow = document.querySelectorAll('#app .item');
+
+        boxRandow.forEach(item => {
+            item.addEventListener('mousehover', function(){
+                console.log(item);                                
+            }, setInterval(getRandomColor ,100));
+        });        
+
+</script>
+
+</body>
+</html>

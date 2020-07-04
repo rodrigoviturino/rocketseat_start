@@ -1,0 +1,4 @@
+{
+    "presets": ["@babel/preset-env"], // de acordo com o ambiente/cliente ele converte para o cliente entender
+    "plugins": ["@babel/plugin-proposal-object-rest-spread"]
+}

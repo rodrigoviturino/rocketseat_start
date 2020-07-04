@@ -1,0 +1,27 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development",
+    "build": "webpack --mode=production",
+    "aula-heranca": "babel ./aula-heranca.js -o ./aula-heranca-bundle.js -w",
+    "oo-static": "babel ./aula-oo-static.js -o ./aula-oo-static-bundle.js -w",
+    "aula-array": "babel ./aula-array.js -o ./aula-array-bundle.js -w",
+    "aula-rest-spread": "babel ./aula-rest-spread.js -o ./aula-rest-spread-bundle.js -w"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}

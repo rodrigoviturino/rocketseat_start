@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+    <!-- Eventos Js-->
+    <div id="app">
+        <input type='text' class="nome" id="nome" name="nome">
+        <button>Enviar</button>
+    </div>
+
+<!-- Scripts -->
+<script>
+    var input = document.querySelector('div#app input[name=nome]');
+    var btnElement = document.querySelector('button');
+
+    btnElement.addEventListener('click', function(){
+        alert(input.value);
+    });
+
+</script>
+    
+</body>
+</html>

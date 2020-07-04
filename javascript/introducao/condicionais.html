@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+
+
+<!-- Scripts -->
+<script>
+
+    function verificarSexo(sexo){
+        
+        if( sexo === "M" ){
+            return "Masculino";
+        } else if ( sexo === "F" ){
+            return "Feminino";
+        } else {
+            return "Outro";
+        }
+    }
+
+    var resultado = verificarSexo("M");
+    console.log(resultado);
+
+    function verificaHumano(humano){
+        switch (humano) {
+            case "M":
+                return "Masculino 1";
+                break;
+            case "F":
+                return "Feminino 0";
+                break;
+            default:
+                return "Outro";
+                break;
+        }
+    }
+
+    console.log(verificaHumano("M"));
+
+</script>
+    
+</body>
+</html>
