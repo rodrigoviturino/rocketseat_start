@@ -22,6 +22,6 @@
     "aula-rest-spread": "babel ./aula-rest-spread.js -o ./aula-rest-spread-bundle.js -w"
   },
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   }
 }
